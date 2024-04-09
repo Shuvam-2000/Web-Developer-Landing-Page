@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Developer.com: Learn Frontend From the Coolest</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favcion.webp" type="image/x-icon">
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/form.css">
+
+
+        <!-- remix icon cdn link -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <div class="img">
+                <img src="images/Landing Page.jpg" alt="">
+            </div>
+
+            <div class="form-box">
+                <h1 id="title">Sign Up</h1>
+                    <form>
+                        <div class="input-group">
+
+                            <div class="input-field" id="nameField">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="Name">
+                            </div>
+
+                            <div class="input-field">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" placeholder="Email">
+                            </div>
+
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <p>Forgot Password ?<a href="#">Click Here!</a></p>
+                            <button type="button" id="submit-btn" onclick="sweetalert()">Submit</button>
+                        </div>
+                        <!-- button -->
+                        <div class="btn-field">
+                            <button type="button" id="signupBtn">Sign Up</button>
+                            <button type="button" id="loginBtn" class="disabled-btn">Login</button>
+                        </div>
+                    </form>
+            </div>
+
+        </div>
+
+
+        <script src="js/form.js"></script>
+
+        <!-- sweetalert cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            function sweetalert(){
+            Swal.fire({
+            icon: 'success',
+            title: 'Good job!',
+            text: 'Form Submitted Successfully',
+        })};
+        </script>
+
+    </body>
+</html> 
