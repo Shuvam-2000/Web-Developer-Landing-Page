@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* background-color: lightseagreen; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 2vw;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the image stays behind other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* form */
+.form-box{
+    width: 90%;
+    max-width: 30vw;
+    position: absolute;
+    border: black solid;
+    top: 50%;
+    left: 100%;
+    margin-right: 0%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 10px;
+    padding: 2.6vw 3.6vw 4.6vw;
+    text-align: center;
+    box-shadow: 2px 2px grey;
+}
+
+
+/* sign-up */
+.form-box h1{
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: black;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: black;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* form input field */
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+
+/* forgot password */
+form p{
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form p a{
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+/* button */
+#submit-btn{
+    width: 40%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 4%;
+    background: lightseagreen;
+    text-align: center;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: lightseagreen;
+    color: white;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 22vw;
+}
+
+.btn-field button.disabled-btn{
+    background: #eaeaea;
+    color: #555;
+}
+
+@media (max-width: 800px){
+    .container {
+    width: 60vh;
+    height: 100vh;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* background-color: lightseagreen; */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    width: 100vw;
+    height: 120vw;
+    z-index: -1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* form */
+.form-box{
+    width: 80%; 
+    max-width: 90%; 
+    height: 70%;
+    position: relative; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%); 
+    padding: 20px; 
+}
+
+
+/* sign-up */
+.form-box h1{
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: black;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: black;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* form input field */
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+
+/* forgot password */
+form p{
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+form p a{
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+/* button */
+#submit-btn{
+    width: 40%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 4%;
+    background: lightseagreen;
+    text-align: center;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background: lightseagreen;
+    color: white;
+    margin-top: 60vw;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 22vw;
+}
+
+.btn-field button.disabled-btn{
+    background: #eaeaea;
+    color: #555;
+}
+}
