@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Developer.com: Learn Frontend From the Coolest</title>
+
+        <!-- remix icon cdn link from remix icon github repo -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- favcion -->
+        <link rel="shortcut icon" href="images/favcion.webp" type="image/x-icon">
+
+    </head>
+    <body>
+        
+        <div class="main">
+
+            <div class="nav">
+                <h2>Web Developer.com</h2>
+                <div class="nav-list">
+                    <h4>Store</h4>
+                    <h4>Courses</h4>
+                    <h4>Careers</h4>
+                    <h4>Blog</h4>
+                    <h4>Account</h4>
+                    <button><a href="form.html" style="text-decoration: none; color: #fff;">Sign Up</a></button>
+                    <i class="ri-menu-3-fill" onclick=showSidebar()></i>
+                </div>
+            </div>
+
+            <!-- sidebar -->
+            <div class="side">
+                <img onclick=hideSidebar() src="images/close-button.png" alt="">
+                <div class="side-list">
+                    <h4>Store</h4>
+                    <h4>Careers</h4>
+                    <h4>Blog</h4>
+                    <h4>Forum</h4>
+                    <h4>Account</h4>
+                    <button><a href="form.html" style="text-decoration: none; color: #fff;">Sign Up</a></button>
+                </div>
+            </div>
+
+            <!-- hero-section -->
+            <div class="content">
+                <div class="left">
+                <h1>Learn <span>Frontend Development</span> From The Coolest. </h1>
+                <p>Make mobile first web application with great user experience & develop cool looking user friendly web pages</p>
+                <button>Explore Now</button>
+                </div>
+                
+                <div class="right">
+                    <img src="images/Landing Page.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+
+
+    </body>
+</html>
